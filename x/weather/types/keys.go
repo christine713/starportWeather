@@ -15,6 +15,10 @@ const (
 
 	// MemStoreKey defines the in-memory store key
 	MemStoreKey = "mem_weather"
+
+	// Keep track of the index of posts
+	weatherPostKey      = "weatherPost-value-"
+	weatherPostCountKey = "weatherPost-count-"
 )
 
 func KeyPrefix(p string) []byte {
