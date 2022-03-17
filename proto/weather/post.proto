@@ -1,6 +1,6 @@
 syntax = "proto3";
-package cosmonaut.blog.blog;
-option go_package = "github.com/cosmonaut/blog/x/blog/types";
+package chrismos.weather.weather;
+option go_package = "github.com/chrismos/weather/x/weather/types";
 
 message weatherPost {
   string creator = 1;
