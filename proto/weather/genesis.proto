@@ -1,0 +1,14 @@
+syntax = "proto3";
+package chrismos.weather.weather;
+
+import "gogoproto/gogo.proto";
+import "weather/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/chrismos/weather/x/weather/types";
+
+// GenesisState defines the weather module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
