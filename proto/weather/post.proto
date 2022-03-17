@@ -2,7 +2,7 @@ syntax = "proto3";
 package cosmonaut.blog.blog;
 option go_package = "github.com/cosmonaut/blog/x/blog/types";
 
-message Post {
+message weatherPost {
   string creator = 1;
   uint64 id = 2;
   string title = 3; 
