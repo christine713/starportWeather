@@ -3,8 +3,8 @@ package simulation
 import (
 	"math/rand"
 
-	"github.com/chrismos/weather/x/weather/keeper"
-	"github.com/chrismos/weather/x/weather/types"
+	"github.com/christine713/weather/x/weather/keeper"
+	"github.com/christine713/weather/x/weather/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"

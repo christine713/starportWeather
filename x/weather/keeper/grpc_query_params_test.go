@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "github.com/chrismos/weather/testutil/keeper"
-	"github.com/chrismos/weather/x/weather/types"
+	testkeeper "github.com/christine713/weather/testutil/keeper"
+	"github.com/christine713/weather/x/weather/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )

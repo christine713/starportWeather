@@ -6,6 +6,7 @@ export interface MsgWeatherPost {
     body: string;
 }
 export interface MsgWeatherPostResponse {
+    id: number;
 }
 export declare const MsgWeatherPost: {
     encode(message: MsgWeatherPost, writer?: Writer): Writer;
@@ -15,11 +16,11 @@ export declare const MsgWeatherPost: {
     fromPartial(object: DeepPartial<MsgWeatherPost>): MsgWeatherPost;
 };
 export declare const MsgWeatherPostResponse: {
-    encode(_: MsgWeatherPostResponse, writer?: Writer): Writer;
+    encode(message: MsgWeatherPostResponse, writer?: Writer): Writer;
     decode(input: Reader | Uint8Array, length?: number): MsgWeatherPostResponse;
-    fromJSON(_: any): MsgWeatherPostResponse;
-    toJSON(_: MsgWeatherPostResponse): unknown;
-    fromPartial(_: DeepPartial<MsgWeatherPostResponse>): MsgWeatherPostResponse;
+    fromJSON(object: any): MsgWeatherPostResponse;
+    toJSON(message: MsgWeatherPostResponse): unknown;
+    fromPartial(object: DeepPartial<MsgWeatherPostResponse>): MsgWeatherPostResponse;
 };
 /** Msg defines the Msg service. */
 export interface Msg {

@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"github.com/chrismos/weather/x/weather/types"
+	"github.com/christine713/weather/x/weather/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

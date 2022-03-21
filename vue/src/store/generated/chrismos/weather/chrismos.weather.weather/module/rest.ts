@@ -20,7 +20,10 @@ export interface RpcStatus {
   details?: ProtobufAny[];
 }
 
-export type WeatherMsgWeatherPostResponse = object;
+export interface WeatherMsgWeatherPostResponse {
+  /** @format uint64 */
+  id?: string;
+}
 
 /**
  * Params defines the parameters for the module.

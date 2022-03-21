@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/chrismos/weather/x/weather/types"
+	"github.com/christine713/weather/x/weather/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

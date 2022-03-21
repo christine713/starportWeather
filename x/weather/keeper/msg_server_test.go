@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	keepertest "github.com/chrismos/weather/testutil/keeper"
-	"github.com/chrismos/weather/x/weather/keeper"
-	"github.com/chrismos/weather/x/weather/types"
+	keepertest "github.com/christine713/weather/testutil/keeper"
+	"github.com/christine713/weather/x/weather/keeper"
+	"github.com/christine713/weather/x/weather/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

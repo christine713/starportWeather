@@ -5,7 +5,7 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/chrismos/weather/x/weather/types"
+	"github.com/christine713/weather/x/weather/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"

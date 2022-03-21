@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"github.com/chrismos/weather/x/weather/types"
+	"github.com/christine713/weather/x/weather/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
@@ -11,7 +11,7 @@ func (k msgServer) WeatherPost(goCtx context.Context, msg *types.MsgWeatherPost)
 	ctx := sdk.UnwrapSDKContext(goCtx)
 
 	// Create variable of type Post
-	var post = types.Post{
+	var post = types.weatherPost{
 		Creator: msg.Creator,
 		Title:   msg.Title,
 		Body:    msg.Body,

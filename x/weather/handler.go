@@ -3,8 +3,8 @@ package weather
 import (
 	"fmt"
 
-	"github.com/chrismos/weather/x/weather/keeper"
-	"github.com/chrismos/weather/x/weather/types"
+	"github.com/christine713/weather/x/weather/keeper"
+	"github.com/christine713/weather/x/weather/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )

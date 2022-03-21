@@ -2,7 +2,8 @@ import { txClient, queryClient, MissingWalletError, registry } from './module';
 // @ts-ignore
 import { SpVuexError } from '@starport/vuex';
 import { Params } from "./module/types/weather/params";
-export { Params };
+import { weatherPost } from "./module/types/weather/post";
+export { Params, weatherPost };
 async function initTxClient(vuexGetters) {
     return await txClient(vuexGetters['common/wallet/signer'], {
         addr: vuexGetters['common/env/apiTendermint']
@@ -39,6 +40,7 @@ const getDefaultState = () => {
         Params: {},
         _Structure: {
             Params: getStructure(Params.fromPartial({})),
+            weatherPost: getStructure(weatherPost.fromPartial({})),
         },
         _Registry: registry,
         _Subscriptions: new Set(),

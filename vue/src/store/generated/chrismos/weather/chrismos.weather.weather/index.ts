@@ -3,9 +3,10 @@ import { txClient, queryClient, MissingWalletError , registry} from './module'
 import { SpVuexError } from '@starport/vuex'
 
 import { Params } from "./module/types/weather/params"
+import { weatherPost } from "./module/types/weather/post"
 
 
-export { Params };
+export { Params, weatherPost };
 
 async function initTxClient(vuexGetters) {
 	return await txClient(vuexGetters['common/wallet/signer'], {
@@ -47,6 +48,7 @@ const getDefaultState = () => {
 				
 				_Structure: {
 						Params: getStructure(Params.fromPartial({})),
+						weatherPost: getStructure(weatherPost.fromPartial({})),
 						
 		},
 		_Registry: registry,
